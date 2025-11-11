@@ -1,5 +1,5 @@
 # Tiny Tapeout project information
-project: flappybird.v
+project: Flappy bird
   title:        "flappybird.v"      # Project title
   author:       "SofiaXeniaAstrid"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
