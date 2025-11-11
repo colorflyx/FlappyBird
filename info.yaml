@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "VGA Experiments in Tennis"      # Project title
-  author:       "Tom Keddie"      # Your name
-  discord:      "TomKeddie"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Simple Game"      # One line description of what your project does
+  title:        "Flappy bird"      # Project title
+  author:       "SofiaXeniaAstrid"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Flappy bird clone"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     25175000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -11,25 +11,25 @@ project:
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_tomkeddie_a"
+  top_module:  "tt_um_SofiaXeniaAstrid_flappybird"
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:
-    - "top_tto.v"
+    - "tt_um_SofiaXeniaAstrid_flappybird"
     - "vga.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "left paddle up"
-  ui[1]: "left paddle down"
-  ui[2]: "right paddle up"
-  ui[3]: "right paddle down"
-  ui[4]: "score reset"
-  ui[5]: "Speed LSB"
-  ui[6]: "Speed MSB"
-  ui[7]: "pmod sel (high=mole99, low=digilent)"
-
+  ui[0]: "flap button"
+  ui[1]: "reset"
+  ui[2]: "unused"
+  ui[3]: "unused"
+  ui[4]: "speed LSB"
+  ui[5]: "speed MSB"
+  ui[6]: "unused"
+  ui[7]: "unused"
+  
   # Outputs
   uo[0]: "r1/r0 (mole99/digilent)"
   uo[1]: "g1/r1 (mole99/digilent)"
@@ -41,14 +41,14 @@ pinout:
   uo[7]: "hsync/b3 (mole99/digilent)"
 
   # Bidirectional pins
-  uio[0]: "g0"
-  uio[1]: "g1"
-  uio[2]: "g2"
-  uio[3]: "g3"
-  uio[4]: "hsync"
-  uio[5]: "vsync"
-  uio[6]: "tied low"
-  uio[7]: "tied low"
+  uio[0]: "unused"
+  uio[1]: "unused"
+  uio[2]: "unused"
+  uio[3]: "unused"
+  uio[4]: "unused"
+  uio[5]: "unused"
+  uio[6]: "unused"
+  uio[7]: "unused"
 
 # Do not change!
 yaml_version: 6
