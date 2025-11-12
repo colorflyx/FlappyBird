@@ -54,4 +54,4 @@ pinout:
   uio[7]: "col of display-Matrix"
   
   # Do not change!
-  yaml_version: 6
+yaml_version: 6
